@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo List</title>
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="site-container">
+      <header class="header">
+        <h1 class="header__title">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#fffbeb"
+            stroke-width="1"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path
+              d="M9.615 20h-2.615a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v8"
+            />
+            <path d="M14 19l2 2l4 -4" />
+            <path d="M9 8h4" />
+            <path d="M9 12h2" />
+          </svg>
+          Мой ToDo List
+        </h1>
+
+        <p class="header__desc">Организуйте свои задачи эффективно</p>
+      </header>
+
+      <main class="main">
+        <section class="new-task">
+          <input
+            type="text"
+            class="new-task__input"
+            placeholder="Введите новую задачу..."
+          />
+          <button class="new-task__btn">Добавить</button>
+        </section>
+
+        <section class="tasks">
+          <h2 class="tasks__title">Мои задачи</h2>
+
+          <form action="#" class="tasks__form">
+            <div class="tasks__line">
+              <div class="tasks__checkbox-wrap">
+                <input
+                  type="checkbox"
+                  name="task1"
+                  id="task1"
+                  class="tasks__mark"
+                />
+                <label for="task1" class="tasks__text">
+                  Изучить основы HTML и CSS
+                </label>
+              </div>
+              <button class="tasks__btn-del">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 -960 960 960"
+                  width="24px"
+                  fill="#28283d"
+                >
+                  <path
+                    d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <div class="tasks__line">
+              <div class="tasks__checkbox-wrap">
+                <input
+                  type="checkbox"
+                  name="task2"
+                  id="task2"
+                  class="tasks__mark"
+                />
+                <label for="task2" class="tasks__text">
+                  Создать красивую верстку ToDo приложения
+                </label>
+              </div>
+              <button class="tasks__btn-del">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 -960 960 960"
+                  width="24px"
+                  fill="#28283d"
+                >
+                  <path
+                    d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <div class="tasks__line">
+              <div class="tasks__checkbox-wrap">
+                <input
+                  type="checkbox"
+                  name="task3"
+                  id="task3"
+                  class="tasks__mark"
+                />
+                <label for="task3" class="tasks__text">
+                  Изучить JavaScript и DOM манипуляции
+                </label>
+              </div>
+              <button class="tasks__btn-del">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 -960 960 960"
+                  width="24px"
+                  fill="#28283d"
+                >
+                  <path
+                    d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <div class="tasks__line">
+              <div class="tasks__checkbox-wrap">
+                <input
+                  type="checkbox"
+                  name="task4"
+                  id="task4"
+                  class="tasks__mark"
+                />
+                <label for="task4" class="tasks__text">
+                  Создать полнофункциональное приложение
+                </label>
+              </div>
+              <button class="tasks__btn-del">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 -960 960 960"
+                  width="24px"
+                  fill="#28283d"
+                >
+                  <path
+                    d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <div class="tasks__line">
+              <div class="tasks__checkbox-wrap">
+                <input
+                  type="checkbox"
+                  name="task5"
+                  id="task5"
+                  class="tasks__mark"
+                />
+                <label for="task5" class="tasks__text">
+                  Изучить современные CSS фреймворки
+                </label>
+              </div>
+              <button class="tasks__btn-del">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 -960 960 960"
+                  width="24px"
+                  fill="#28283d"
+                >
+                  <path
+                    d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </form>
+        </section>
+      </main>
+
+      <footer>
+        <p class="footer__desc">
+          Это статичная версия. Для интерактивности нужен JavaScript!
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
