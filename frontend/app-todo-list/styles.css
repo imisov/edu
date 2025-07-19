@@ -36,6 +36,19 @@ body {
   font-style: normal;
 }
 
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 .header__title,
 .tasks__title,
 .header__desc,
@@ -45,8 +58,7 @@ body {
 
 .site-container {
   width: 40%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   padding-top: 30px;
 }
 
@@ -94,8 +106,6 @@ body {
   padding: 10px 20px;
   background-color: var(--btn-color);
   color: var(--main-white-color);
-  border: none;
-  cursor: pointer;
 }
 
 .new-task__btn:hover {
@@ -188,9 +198,6 @@ body {
   width: 30px;
   height: 30px;
   padding: 3px;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
 }
 
 .tasks__btn-del svg:hover {

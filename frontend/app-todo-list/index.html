@@ -46,19 +46,21 @@
 
       <main class="main">
         <section class="new-task">
-          <input
-            type="text"
-            class="new-task__input"
-            placeholder="Введите новую задачу..."
-          />
-          <button class="new-task__btn">Добавить</button>
+          <form action="#" class="new-task__form">
+            <input
+              type="text"
+              class="new-task__input"
+              placeholder="Введите новую задачу..."
+            />
+            <button class="new-task__btn btn-reset">Добавить</button>
+          </form>          
         </section>
 
         <section class="tasks">
           <h2 class="tasks__title">Мои задачи</h2>
 
-          <form action="#" class="tasks__form">
-            <div class="tasks__line">
+          <ul class="tasks__list list-reset"> 
+            <li class="tasks__line">
               <div class="tasks__checkbox-wrap">
                 <input
                   type="checkbox"
@@ -70,7 +72,7 @@
                   Изучить основы HTML и CSS
                 </label>
               </div>
-              <button class="tasks__btn-del">
+              <button class="tasks__btn-del btn-reset">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   height="24px"
@@ -83,9 +85,9 @@
                   />
                 </svg>
               </button>
-            </div>
+            </li>
 
-            <div class="tasks__line">
+            <li class="tasks__line">
               <div class="tasks__checkbox-wrap">
                 <input
                   type="checkbox"
@@ -97,7 +99,7 @@
                   Создать красивую верстку ToDo приложения
                 </label>
               </div>
-              <button class="tasks__btn-del">
+              <button class="tasks__btn-del btn-reset">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   height="24px"
@@ -110,9 +112,9 @@
                   />
                 </svg>
               </button>
-            </div>
+            </li>
 
-            <div class="tasks__line">
+            <li class="tasks__line">
               <div class="tasks__checkbox-wrap">
                 <input
                   type="checkbox"
@@ -124,7 +126,7 @@
                   Изучить JavaScript и DOM манипуляции
                 </label>
               </div>
-              <button class="tasks__btn-del">
+              <button class="tasks__btn-del btn-reset">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   height="24px"
@@ -137,9 +139,9 @@
                   />
                 </svg>
               </button>
-            </div>
+            </li>
 
-            <div class="tasks__line">
+            <li class="tasks__line">
               <div class="tasks__checkbox-wrap">
                 <input
                   type="checkbox"
@@ -151,7 +153,7 @@
                   Создать полнофункциональное приложение
                 </label>
               </div>
-              <button class="tasks__btn-del">
+              <button class="tasks__btn-del btn-reset">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   height="24px"
@@ -164,9 +166,9 @@
                   />
                 </svg>
               </button>
-            </div>
+            </li>
 
-            <div class="tasks__line">
+            <li class="tasks__line">
               <div class="tasks__checkbox-wrap">
                 <input
                   type="checkbox"
@@ -178,7 +180,7 @@
                   Изучить современные CSS фреймворки
                 </label>
               </div>
-              <button class="tasks__btn-del">
+              <button class="tasks__btn-del btn-reset">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   height="24px"
@@ -191,8 +193,8 @@
                   />
                 </svg>
               </button>
-            </div>
-          </form>
+            </li>
+          </ul>
         </section>
       </main>
 
