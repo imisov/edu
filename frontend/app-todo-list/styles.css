@@ -63,7 +63,8 @@ body {
 }
 
 .header,
-.main {
+.main,
+.footer {
   margin-bottom: 30px;
 }
 
